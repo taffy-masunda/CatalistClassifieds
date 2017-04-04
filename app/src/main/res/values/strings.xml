@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">Catalist</string>
+    <string name="latest_ads_title">Latest Ads</string>
+    <string name="searching">Searching.. Please wait.</string>
+
+    <!-- Menu strings-->
+    <string name="menu_about">About Catalist</string>
+    <string name="menu_tips">Safety Tips</string>
+    <string name="menu_exit">Close &amp; Exit</string>
+    <!-- end of menu strings-->
+
+    <!-- About us page information -->
+    <string name="about_title">About Catalist</string>
+
+    <string name="about_parahraph1">
+            Catalist is a free online classifieds aimed at the student community. What ever you want to sell around campus, you
+            can put it on Catalist free of charge. You can now sell or look for used stationery, appliances, gadgets and more.
+            This is an initiative started to cover the large student community that the already existing online classifieds do not cater for.
+        </string>
+
+    <string name="about_parahraph2">
+            Catalist is built for students, by students. So its simple to navigate through and simple to use even for the new
+            computer users. Your search can be institution, campus or category specific. This ensures that you always get the most
+            relevant results to what you are looking for. Available ofor mobile devices so that you can still search and post your
+            adverts on the move where ever you are.
+        </string>
+
+    <string name="about_parahraph3">
+            The main aim of Catalist is to promote young entrepreneurship and help make student life easier. The cost of studies
+            and living expenses alone are great so selling what you do not use anymore can help sustain you financially.
+        </string>
+
+    <string name="about_parahraph4">
+            We aim at being the leader in student classifieds across the continent. So let\'s work together at making student life easier.
+        </string>
+
+    <string name="btn_about">More About Catalist</string>
+    <!--  end of About strings -->
+
+
+    <!-- Serach screen strings-->
+    <string name="search_title">Search for Ads</string>
+    <string name="search_validation_error">Please change the search criteria!</string>
+    <!-- End of search screen strings-->
+
+
+    <!-- Search results -->
+    <string name="search_results_title">Results</string>
+    <!-- end of Search Results-->
+
+    <!-- Advert Details strings-->
+    <string name="report_advert">Report this advert</string>
+    <string name="btn_call">Call</string>
+    <string name="btn_sms">SMS</string>
+    <string name="btn_email">Email</string>
+    <!-- End of Advert details strings -->
+
+
+    <!-- Report advert strings-->
+    <string name="report_title">Report Advert</string>
+    <string name="btn_report">Report Advert</string>
+    <string name="report_confirm">Thanks, Advert Reported. We will look at it.</string>
+
+    <string-array name="offense_categories">
+        <item>Select Report Category</item>
+        <item>Offensive Content</item>
+        <item>Scam</item>
+        <item>Pornography</item>
+        <item>Hate Speech</item>
+    </string-array>
+    <!-- end of report advert strings-->
+
+
+    <!-- Tips and Safety strings-->
+        <string name="tips_title">Safety Tips</string>
+
+</resources>

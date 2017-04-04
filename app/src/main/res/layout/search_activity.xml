@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/search_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="taffy.co.za.catalistclassifieds.SearchActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/splash_bg_color"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize">
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Search Phrase -->
+        <EditText
+            android:id="@+id/edtSearchPhrase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Search"
+            android:ems="10"
+            android:layout_margin="10dp"/>
+
+        <!-- Category -->
+        <Spinner
+            android:id="@+id/spinCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dialog"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/txtSearchPhrase" />
+
+        <!-- Institution -->
+        <Spinner
+            android:id="@+id/spinInstitution"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinFeedbackCategory"
+            android:layout_margin="10dp"
+            android:spinnerMode="dialog" />
+
+        <!-- Button Search-->
+        <Button
+            android:id="@+id/btnSearch"
+            android:text="Show  Results"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:background="@android:color/holo_blue_dark"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_below="@+id/spinInstitution" />
+
+    </LinearLayout>
+
+</LinearLayout>

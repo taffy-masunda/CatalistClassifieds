@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/advert_details_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="taffy.co.za.catalistclassifieds.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/splash_bg_color"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".5">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Image -->
+            <ImageView
+                android:id="@+id/adImageDetails"
+                android:layout_width="match_parent"
+                android:layout_height="252dp"
+                android:background="@android:color/white" />
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/tvAdvertTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/adImageDetails"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Advert title goes here and ends with ... if too long"
+                android:textColor="@android:color/black"
+                android:textSize="16dp" />
+
+            <!-- Institution -->
+            <TextView
+                android:id="@+id/tvInstitution"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tvAdvertTitle"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="5dp"
+                android:text="My University of Technology" />
+
+            <!-- Price -->
+            <TextView
+                android:id="@+id/tvPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvInstitution"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Price R 100"
+                android:textColor="@android:color/holo_blue_dark" />
+
+            <!-- Report advert -->
+            <TextView
+                android:id="@+id/tvReport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tvInstitution"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:clickable="true"
+                android:text="@string/report_advert"
+                android:textColor="@android:color/holo_red_dark" />
+
+            <!-- Description -->
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvReport"
+                android:layout_margin="10dp"
+                android:text="This is a sample description of an advert that someone has posted. This is for the sake of testing the UI and how it  woul dlook like once populated with data from the storage."
+                android:textColor="@android:color/black" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tvSellerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:text="Contact:"/>
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/tvDescription"
+        android:layout_weight="0.01"
+        android:orientation="horizontal">
+
+        <!-- Call Button -->
+        <Button
+            android:id="@+id/btnCallSeller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="0.3"
+            android:background="@android:color/holo_blue_dark"
+            android:text="@string/btn_call"
+            android:textColor="@android:color/white" />
+
+        <!-- SMS Button -->
+        <Button
+            android:id="@+id/btnSmsSeller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="0.3"
+            android:background="@android:color/holo_blue_dark"
+            android:text="@string/btn_sms"
+            android:textColor="@android:color/white" />
+
+        <!-- Email Button-->
+        <Button
+            android:id="@+id/btnEmailSeller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="0.3"
+            android:background="@android:color/holo_blue_dark"
+            android:text="@string/btn_email"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>
